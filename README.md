@@ -1,3 +1,23 @@
+#Guia de instalación
+
+- Clonar repositorio
+- Correr comando npm install de tener problemas al levantar el proyecto correr npm i 
+- click derecho en folder API abrir terminal y correr comando npm install para node_modules del proyecto
+- regresar a la terminar principal y correr los comands **npm run dev** para levantar la aplicación angular
+- correr comando **npm start** para levantar api
+
+# Descripción
+
+  Esto es un proyecto con algunas implementaciones de angular, material, boostrap y node js 
+  se utilizaron algunas de las ventajas que te da Angular para el desarrollo combinandolo con las librerias de estilos para facilitar la construcción de la misma.
+  
+  El API tiene dos controladores uno para usuarios y el otro para revisar las personas que se van a vacunar que lograron registrarse. 
+  
+  para poder ver la lista de quienes han sido registrados **es necesario logearse con las siguientes credenciales**
+  user: admin
+  pwd: admin
+  
+  
 # VacunacionProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
