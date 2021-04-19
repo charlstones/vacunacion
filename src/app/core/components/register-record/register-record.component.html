@@ -1,0 +1,86 @@
+<form [formGroup]="form">
+
+  <div class="row">
+    <div class="col">
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Nombre</mat-label>
+          <input matInput placeholder="Nombre" formControlName="firstName">
+        </mat-form-field>
+
+    </div>
+
+    <div class="col">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Apellido Paterno</mat-label>
+        <input matInput placeholder="Apellido" formControlName="lastName">
+      </mat-form-field>
+    </div>
+
+    <div class="col">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Apellido Materno</mat-label>
+        <input matInput placeholder="Apellido Materno" formControlName="secondLastName">
+      </mat-form-field>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>CURP</mat-label>
+        <input matInput placeholder="CURP" formControlName="curp" maxlength="18">
+      </mat-form-field>
+
+    </div>
+
+    <div class="col">
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Edad</mat-label>
+        <input matInput placeholder="CURP" formControlName="age" type="number">
+      </mat-form-field>
+    </div>
+
+    <div class="col">
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Estado</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="state">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col">
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Ciudad</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="city">
+      </mat-form-field>
+    </div>
+
+    <div class="col">
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>C.P</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="postalCode" maxlength="5" pattern="\d*" >
+      </mat-form-field>
+    </div>
+
+    <div class="col">
+      <mat-form-field class="full-width" appearance="fill" class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email" [errorStateMatcher]=""
+               placeholder="Ex. pat@example.com">
+        <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+        <!-- <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error> -->
+      </mat-form-field>
+    </div>
+  </div>
+</form>
+<mat-divider></mat-divider>

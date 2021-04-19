@@ -1,0 +1,11 @@
+
+
+    <button mat-flat-button color="primary" (click)="save()" [disabled]="vaccineCandidates.status == 'INVALID'">Guardar</button>
+    <button mat-flat-button color="primary" (click)="add()">Registro extra</button>
+    <button mat-flat-button color="warn" (click)="remove()" [disabled]="vaccineCandidates.length == 1">Remover ultimo registro</button>
+<form [formGroup]="vaccineGroup">
+  <div formArrayName="vaccineCandidates">
+    <app-register-record [form]="candidate" *ngFor="let candidate of vaccineCandidates.controls; let index = i"></app-register-record>
+  </div>
+
+</form>
