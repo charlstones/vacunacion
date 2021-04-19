@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "nodemon ./api/bin/www",
     "dev": "ng serve",
+    "start": "nodemon ./api/bin/www",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
